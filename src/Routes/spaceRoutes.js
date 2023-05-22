@@ -1,13 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Header from '../Components/Header';
+import Rockets from '../Components/Rockets';
 
 const SpaceRoutes = () => (
   <>
     <div className="container-fluid">
       <Header />
       <Routes>
-        <Route path="/" element={<h1>Test</h1>} />
+        <Route path="/" element={<Rockets />} />
       </Routes>
     </div>
   </>
