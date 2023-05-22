@@ -15,7 +15,9 @@ function Header() {
         </a>
       </div>
       <div className="menu_items">
-        Test
+        <NavLink to="/" exact className="menu_item">
+          Rockets
+        </NavLink>
       </div>
     </nav>
   );
