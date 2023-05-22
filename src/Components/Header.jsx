@@ -5,7 +5,7 @@ import '../Styles/Header.css';
 
 function Header() {
   return (
-    <nav>
+    <nav className="navBar">
       <div className="logo_title">
         <NavLink to="/" exact>
           <img src={logo} alt="logo" className="logo" />
@@ -14,8 +14,12 @@ function Header() {
           Space Travelers&apos; Hub
         </a>
       </div>
-      <div className="menu_items">
-        Test
+      <div className="navItems">
+        <ul className="navLinks">
+          <li>My Profile</li>
+          <li>Missions</li>
+          <li>Rockets</li>
+        </ul>
       </div>
     </nav>
   );
