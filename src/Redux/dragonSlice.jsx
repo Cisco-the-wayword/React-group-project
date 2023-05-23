@@ -29,7 +29,7 @@ const dragonSlice = createSlice({
 			const newState = state.dragons.map(dragon => {
 				if(dragon.id !== action.payload)
 						return dragon;
-				return { ...dragon, reserved: true };
+				return { ...dragon, reserved: !dragon.reserved };
       });
 			return {
         ...state,
