@@ -34,9 +34,12 @@ function Dragons() {
 						</h2>
 						<p className="dragon-detail">
 						{dragon.reserved ? <span className="reserved-span">Reserved</span>:''}{dragon.description}</p>
-					<button className="reserve-btn"
+					<button className={dragon.reserved ?'cancle-reserve': 'reserve-btn'}
 						onClick={()=>dispatch(reserve(dragon.id))}>
-						Reserve Dragon
+						{dragon.reserved
+								? 'Cancel Reservation'
+								: '	Reserve Dragon'
+						}
 					</button>
 					</div>
 				</div>
