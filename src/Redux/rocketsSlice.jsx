@@ -33,8 +33,8 @@ const rocketSlice = createSlice({
       })
       .addCase(getRockets.fulfilled, (state, action) => {
         const rockets = action.payload.map((rocket) => {
-          const { id, name, type, description, flickr_images } = rocket;
-          return { id, name, type, description, flickr_images };
+          const { id, rocket_name, type, description, flickr_images } = rocket;
+          return { id, rocket_name, type, description, flickr_images };
         });
         state.rocketList = rockets;
       });
