@@ -1,0 +1,35 @@
+.dragon-container {
+  padding: 1rem 3rem;
+}
+
+.dragon-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 2rem;
+}
+
+.dragon-img {
+  width: 25rem;
+  height: 12rem;
+  border: 1px solid black;
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.reserve-btn {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.2rem;
+  font-size: larger;
+}
+
+.dragon-header {
+  margin-top: 0;
+}
