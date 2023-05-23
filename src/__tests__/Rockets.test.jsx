@@ -3,7 +3,6 @@ import { render, fireEvent } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
 import Rockets from '../components/Rockets';
 import { reservation } from '../Redux/rocketsSlice';
-import 'jest';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
