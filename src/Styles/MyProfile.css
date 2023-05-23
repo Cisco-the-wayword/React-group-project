@@ -6,8 +6,7 @@
 }
 
 .reserved_rockets,
-.myMissions
- {
+.myMissions {
   width: 50%;
 }
 
@@ -26,6 +25,12 @@ ul {
   list-style: none;
 }
 
+.missions_container li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  list-style: none;
+}
+
 .rockets_container li:last-child {
   border-bottom: none;
 }
@@ -33,12 +38,6 @@ ul {
 .myMissionsList {
   border: 1px solid #ddd;
   border-collapse: collapse;
-}
-
-.missions_container li {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-  list-style: none;
 }
 
 .missions_container li:last-child {
