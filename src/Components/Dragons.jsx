@@ -26,7 +26,7 @@ function Dragons() {
     <main className="dragon-container">
       {dragons.map((dragon) => (
 				<div key={dragon.id} className="dragon-card">
-					<img alt="Dragon" src={dragon.image[0]} className="dragon-img" />
+					<img alt="Dragon" src={dragon.image[1]} className="dragon-img" />
 					<div className="section-left">
 						<h2 className="dragon-header">
 							{dragon.name}
