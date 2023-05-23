@@ -1,9 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../Assets/logo.png';
 import '../Styles/Header.css';
 
 function Header() {
+  const { pathname } = useLocation();
+
+  const isActiveLink = (match) => {
+    if (match || (pathname === '/myProfile') || (pathname === '/missions')) {
+      return true;
+    }
+    return false;
+  };
+
   return (
     <nav className="navBar">
       <div className="logo_title">
@@ -16,8 +25,16 @@ function Header() {
       </div>
       <div className="navItems">
         <ul className="navLinks">
-          <li>My Profile</li>
-          <li>Missions</li>
+          <li>
+            <NavLink exact to="/myProfile" isActive={isActiveLink} activeClassName="active">
+              My Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/missions" isActive={isActiveLink} activeClassName="active">
+              Missions
+            </NavLink>
+          </li>
           <li>Rockets</li>
         </ul>
       </div>
