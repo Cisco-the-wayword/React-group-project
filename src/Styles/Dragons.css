@@ -33,3 +33,11 @@
 .dragon-header {
   margin-top: 0;
 }
+
+/* reserved span */
+.reserved-span {
+  background-color: #0290ff;
+  color: white;
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
