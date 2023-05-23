@@ -1,18 +1,41 @@
 import React from "react";
-import '../Styles/Dragons.css'
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchDragons } from "../Redux/dragonSlice";
+import '../Styles/Dragons.css';
+
 function Dragons() {
+	const dispatch = useDispatch();
+	const { dragons, isLoading, error } = useSelector((store) => store.dragons);
+
+  useEffect(() => {
+    dispatch(fetchDragons());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return (
+      <div>Loading...</div>
+    );
+  }
+  if (error) {
+    return (
+      <div>Error: Try again!</div>
+    );
+  }
   return (
     <main className="dragon-container">
-      <div className="dragon-card">
-        <img alt="Dragon" className="dragon-img" />
-				<div className="section-left">
-           <h2 className="dragon-header">
-            Dragon 1
-					</h2>
-					<p className="dragon-detail"><span className="reserved-span"></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus? Vero, voluptatibus mollitia. Animi impedit illum adipisci voluptas ad, aliquid doloribus modi consectetur. Quas porro quam voluptatum. Eius, dolores aliquam.</p>
-				<button className="reserve-btn">Reserve Dragon</button>
+     
+				<div className="dragon-card">
+					<img alt="Dragon" className="dragon-img" />
+					<div className="section-left">
+						<h2 className="dragon-header">
+							Dragon 1
+						</h2>
+						<p className="dragon-detail"><span className="reserved-span"></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus? Vero, voluptatibus mollitia. Animi impedit illum adipisci voluptas ad, aliquid doloribus modi consectetur. Quas porro quam voluptatum. Eius, dolores aliquam.</p>
+					<button className="reserve-btn">Reserve Dragon</button>
+					</div>
 				</div>
-			</div>
+
 		</main>
   );
 }
