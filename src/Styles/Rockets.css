@@ -1,54 +1,54 @@
 .container {
-    display: flex;
-    margin: 10px 60px;
+  display: flex;
+  margin: 10px 60px;
 }
 
 .img {
-    width: 265px;
-    height: 200px;
-    margin: 10px;
+  width: 265px;
+  height: 200px;
+  margin: 10px;
 }
 
 .rocket_info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .rocket_info h2 {
-    margin: 7px 0;
-    font-weight: 500;
+  margin: 7px 0;
+  font-weight: 500;
 }
 
 .rocket_info p {
-    margin-top: 0;
-    font-weight: 400;
+  margin-top: 0;
+  font-weight: 400;
 }
 
 .reserved_sign {
-    background-color: rgb(36, 127, 247);
-    color: white;
-    font-size: 0.75rem;
-    border-radius: 3px;
-    padding: 1px 3px;
-    margin-right: 10px;
+  background-color: rgb(36, 127, 247);
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  padding: 1px 3px;
+  margin-right: 10px;
 }
 
 .reserve {
-    width:150px;
-    padding: 10px 10px;
-    background-color: rgb(36, 127, 247);
-    color: white;
-    border: none;
-    border-radius: 5px;
+  width: 150px;
+  padding: 10px 10px;
+  background-color: rgb(36, 127, 247);
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 .cancel {
-    font-size: 1rem;
-    width:200px;
-    padding: 10px 10px;
-    background-color: #fff;
-    color: gray;
-    border: gray 1px solid;
-    border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px 10px;
+  background-color: #fff;
+  color: gray;
+  border: gray 1px solid;
+  border-radius: 5px;
 }
