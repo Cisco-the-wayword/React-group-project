@@ -28,6 +28,7 @@ function Rockets() {
             <div className='rocket_info'>
               <h2>{rocket.rocket_name}</h2>
               <p>
+              {rocket.reserved && <span className='reserved_sign'>Reserved</span>}
                 {rocket.description}
               </p>
               <button onClick={() => handleReservation(rocket.id)}
