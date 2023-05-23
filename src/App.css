@@ -92,6 +92,6 @@
   cursor: pointer;
 }
 
-.navLinks ul a li:active {
+.navLinks li:active {
   text-decoration: underline;
 }

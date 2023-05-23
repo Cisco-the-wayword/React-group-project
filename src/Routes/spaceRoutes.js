@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Header from '../Components/Header';
 import MyProfile from '../Components/MyProfile';
+import Missions from '../Components/Missions'
 
 const SpaceRoutes = () => (
   <>
@@ -10,7 +11,7 @@ const SpaceRoutes = () => (
       <Routes>
         <Route path="/" element={<h1>Rockets</h1>} />
         <Route path="/myProfile" element={<MyProfile />} />
-        <Route path="/missions" element={<h1>Missions</h1>} />
+        <Route exact path="/missions" element={<Missions />} />
         <Route path="/dragons" element={<h1>Dragons</h1>} />
       </Routes>
     </div>
