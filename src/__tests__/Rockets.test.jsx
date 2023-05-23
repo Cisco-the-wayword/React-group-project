@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { useSelector, useDispatch } from 'react-redux';
