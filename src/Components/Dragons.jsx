@@ -32,7 +32,8 @@ function Dragons() {
 						<h2 className="dragon-header">
 							{dragon.name}
 						</h2>
-						<p className="dragon-detail"><span className="reserved-span"></span>{dragon.description}</p>
+						<p className="dragon-detail">
+						{dragon.reserved ? <span className="reserved-span">Reserved</span>:''}{dragon.description}</p>
 					<button className="reserve-btn"
 						onClick={()=>dispatch(reserve(dragon.id))}>
 						Reserve Dragon
