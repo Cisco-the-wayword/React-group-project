@@ -10,7 +10,6 @@ export const fetchDragons = createAsyncThunk('Dragons/fetchDragons',async () => 
       name: dragon.name,
       type: dragon.type,
       image: dragon.flickr_images,
-			description: dragon.description,
     }));
     return selectedDragon;
 });
