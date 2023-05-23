@@ -29,3 +29,14 @@ nav {
   align-items: center;
   gap: 30px;
 }
+
+.menu_item {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(36, 127, 247);
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
