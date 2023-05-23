@@ -4,6 +4,7 @@ import Header from '../Components/Header';
 import MyProfile from '../Components/MyProfile';
 import Missions from '../Components/Missions'
 import Rockets from '../Components/Rockets';
+import Dragons from '../Components/Dragons';
 
 const SpaceRoutes = () => (
   <>
@@ -13,7 +14,7 @@ const SpaceRoutes = () => (
         <Route path="/" element={<Rockets />} />
         <Route path="/myProfile" element={<MyProfile />} />
         <Route path="/missions" element={<Missions />} />
-        <Route path="/dragons" element={<h1>Dragons</h1>} />
+        <Route path="/dragons" element={<Dragons />} />
       </Routes>
     </div>
   </>
