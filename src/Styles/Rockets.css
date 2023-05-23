@@ -23,6 +23,7 @@
 .rocket_info p {
   margin-top: 0;
   font-weight: 400;
+  text-align: left;
 }
 
 .reserved_sign {
