@@ -52,4 +52,5 @@ const dragonSlice = createSlice({
   },
 });
 
+export const {reserve} = dragonSlice.actions;
 export default dragonSlice.reducer;

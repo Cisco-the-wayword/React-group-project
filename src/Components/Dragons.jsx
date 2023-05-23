@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchDragons } from "../Redux/dragonSlice";
+import { fetchDragons,reserve } from "../Redux/dragonSlice";
 import '../Styles/Dragons.css';
 
 function Dragons() {
@@ -22,8 +22,7 @@ function Dragons() {
       <div>Error: Try again!</div>
     );
   }
-	const ReserveDragon = (id) => {});
-	}
+
   return (
     <main className="dragon-container">
       {dragons.map((dragon) => (
@@ -35,7 +34,7 @@ function Dragons() {
 						</h2>
 						<p className="dragon-detail"><span className="reserved-span"></span>{dragon.description}</p>
 					<button className="reserve-btn"
-						onClick={ReserveDragon(dragon.id)}>
+						onClick={()=>dispatch(reserve(dragon.id))}>
 						Reserve Dragon
 					</button>
 					</div>
