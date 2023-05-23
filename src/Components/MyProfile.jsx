@@ -36,7 +36,7 @@ const MyProfile = () => {
           </div>
         )}
       </section>
-      <div className='reserved_rockets'>
+      <section className='reserved_rockets'>
         <h2>My Rockets</h2>
         {reservedRockets.length ? (
           <ul className='rockets_container'>
@@ -53,7 +53,7 @@ const MyProfile = () => {
             <p>No rockets reserved</p>
           </div>
         )}
-      </div>
+      </section>
     </section>
     </>
   );
