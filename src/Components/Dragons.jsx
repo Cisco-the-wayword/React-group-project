@@ -22,6 +22,8 @@ function Dragons() {
       <div>Error: Try again!</div>
     );
   }
+	const ReserveDragon = (id) => {});
+	}
   return (
     <main className="dragon-container">
       {dragons.map((dragon) => (
@@ -32,7 +34,10 @@ function Dragons() {
 							{dragon.name}
 						</h2>
 						<p className="dragon-detail"><span className="reserved-span"></span>{dragon.description}</p>
-					<button className="reserve-btn">Reserve Dragon</button>
+					<button className="reserve-btn"
+						onClick={ReserveDragon(dragon.id)}>
+						Reserve Dragon
+					</button>
 					</div>
 				</div>
      ))}
