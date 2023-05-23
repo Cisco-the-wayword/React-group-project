@@ -1,49 +1,50 @@
-.ProfileContainer {
-  margin: 1rem 5rem 1rem 5rem;
+.profile_container {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 10px 75px;
 }
 
-.myMissions {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.reserved_rockets,
+.myMissions
+ {
+  width: 50%;
 }
 
-.myRockets {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+ul {
+  padding: 0;
 }
 
-.sectionTitle {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.myMissionsList {
-  list-style: none;
+.rockets_container {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
 }
 
 .item {
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  list-style: none;
+}
+
+.rockets_container li:last-child {
   border-bottom: none;
-  border-top: 0.1rem solid #8d8a8a;
-  border-left: 0.1rem solid #8d8a8a;
-  border-right: 0.1rem solid #8d8a8a;
 }
 
-.item:first-child {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+.myMissionsList {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
 }
 
-.item:last-child {
-  border-bottom: 0.1rem solid #8d8a8a;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+.missions_container li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  list-style: none;
+}
+
+.missions_container li:last-child {
+  border-bottom: none;
+}
+
+.left_padding {
+  padding-left: 20px;
 }
