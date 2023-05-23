@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import '../Styles/Missions.css'
 import { useDispatch, useSelector } from 'react-redux';
 import SingleMission from './SingleMission';
 import { allMissions, getMissionFromAPI, isLoading } from '../Redux/missionSlice';
