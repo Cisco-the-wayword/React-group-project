@@ -16,9 +16,18 @@ function Header() {
       </div>
       <div className="navItems">
         <ul className="navLinks">
-          <li>My Profile</li>
-          <li>Missions</li>
-          <li>Rockets</li>
+        <NavLink to="/myProfile" className='menu_item'>
+          My Profile
+        </NavLink>
+        <NavLink to="/dragons" className='menu_item'>
+          Dragons |
+        </NavLink>
+        <NavLink to="/Missions" className='menu_item'>
+          Missions |
+        </NavLink>
+        <NavLink to="/" exact className='menu_item'>
+          Rockets |
+        </NavLink>
         </ul>
       </div>
     </nav>
