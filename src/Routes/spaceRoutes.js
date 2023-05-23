@@ -12,7 +12,7 @@ const SpaceRoutes = () => (
       <Routes>
         <Route path="/" element={<Rockets />} />
         <Route path="/myProfile" element={<MyProfile />} />
-        <Route exact path="/missions" element={<Missions />} />
+        <Route path="/missions" element={<Missions />} />
         <Route path="/dragons" element={<h1>Dragons</h1>} />
       </Routes>
     </div>
