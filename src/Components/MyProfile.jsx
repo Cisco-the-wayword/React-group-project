@@ -56,7 +56,20 @@ const MyProfile = () => {
           </div>
         )}
       </section>
-
+      <section className="reserved-dragons">
+        <h2>My Dragons</h2>
+				{ReservedDragons.length>0 ? (
+					ReservedDragons.map((dragon)=>(
+						<li className="item" key={dragon.id}>
+              <span>{dragon.name}</span>
+            </li>
+					))
+				):(
+            <div className='no-dragon'>
+							<p>No dragon reserved</p>
+						</div>
+				)}
+			</section>
     </section>
     </>
   );
