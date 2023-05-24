@@ -59,13 +59,15 @@ const MyProfile = () => {
       <section className="reserved-dragons">
         <h2>My Dragons</h2>
 				{ReservedDragons.length>0 ? (
-					ReservedDragons.map((dragon)=>(
+					<ul className='dragons-list'>
+            {ReservedDragons.map((dragon)=>(
 						<li className="item" key={dragon.id}>
               <span>{dragon.name}</span>
             </li>
-					))
+					))}
+          </ul>
 				):(
-            <div className='no-dragon'>
+            <div className='dragons-list'>
 							<p>No dragon reserved</p>
 						</div>
 				)}
