@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import missionReducer from './missionSlice';
 import rocketReducer from './rocketsSlice';
-import dragonReducer from './dragonSlice';
+import dragonReducer,{fetchDragons} from './dragonSlice';
 
 const store = configureStore({
   reducer: {
@@ -11,4 +11,5 @@ const store = configureStore({
   },
 });
 
+store.dispatch(fetchDragons());
 export default store;
