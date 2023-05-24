@@ -6,7 +6,8 @@
 }
 
 .reserved_rockets,
-.myMissions {
+.myMissions,
+.reserved-dragons {
   width: 50%;
 }
 
@@ -14,7 +15,8 @@ ul {
   padding: 0;
 }
 
-.rockets_container {
+.rockets_container,
+.dragons-list {
   border: 1px solid #ddd;
   border-collapse: collapse;
 }
