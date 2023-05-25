@@ -1,0 +1,63 @@
+.dragon-container {
+  padding: 1rem 3rem;
+}
+
+.dragon-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dragon-img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.reserve-btn {
+  width: 150px;
+  padding: 10px 10px;
+  background-color: rgb(36, 127, 247);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dragon-header {
+  margin-top: 0;
+}
+
+/* reserved span */
+.reserved-span {
+  background-color: rgb(36, 127, 247);
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  padding: 1px 3px;
+  margin-right: 10px;
+}
+
+.dragon-detail {
+  font-size: x-large;
+}
+
+/* cancle reserve btn style */
+.cancle-reserve {
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px 10px;
+  background-color: #fff;
+  color: gray;
+  border: gray 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
