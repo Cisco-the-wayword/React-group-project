@@ -23,11 +23,13 @@
 }
 
 .reserve-btn {
-  background-color: #0290ff;
+  width: 150px;
+  padding: 10px 10px;
+  background-color: rgb(36, 127, 247);
   color: white;
   border: none;
-  padding: 0.5rem 0.2rem;
-  font-size: larger;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .dragon-header {
@@ -36,17 +38,26 @@
 
 /* reserved span */
 .reserved-span {
-  background-color: #0290ff;
+  background-color: rgb(36, 127, 247);
   color: white;
-  padding: 0.2rem;
-  margin: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  padding: 1px 3px;
+  margin-right: 10px;
+}
+
+.dragon-detail {
+  font-size: x-large;
 }
 
 /* cancle reserve btn style */
 .cancle-reserve {
-  background-color: white;
-  color: black;
-  border: 1px solid;
-  padding: 0.2rem;
-  margin: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+  padding: 10px 10px;
+  background-color: #fff;
+  color: gray;
+  border: gray 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
 }
